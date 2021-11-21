@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<!-- purchase reports -->
+	<definition name="openPurchaseReportForm" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/views/user/menu.jsp"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/reports/purchase/purchaseReport.jsp"></put-attribute>
+	</definition>
+
+	<!--  <definition name="openPurchaseReportFormByOrg" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/views/organization/activeOrganization/activeOrganizationMenu.jsp"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/reports/purchase/purchaseReport.jsp"></put-attribute>
+	</definition> -->
+	
+	<definition name="purchaseOrdersView" extends="ajax.defination">
+		<put-attribute name="menu" value=""></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/reports/purchase/purchaseReportsData.jsp"></put-attribute>
+	</definition> 
+	<definition name="openPurchaseRtnReportForm" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/views/user/menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/reports/purchase/purchaseReturnsReport.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="openSalesReportForm" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/views/user/menu.jsp"></put-attribute>	
+		<put-attribute name="body" value="/WEB-INF/views/reports/sales/salesReport.jsp"></put-attribute>		
+	</definition>
+	
+	<definition name="openSalesReturnReportsForm" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/views/user/menu.jsp"></put-attribute>	
+		<put-attribute name="body" value="/WEB-INF/views/reports/sales/salesReturnsReport.jsp"></put-attribute>	
+	</definition>
+	<definition name="salesOrderReportsView" extends="ajax.defination">
+			<put-attribute name="menu"
+			value=""></put-attribute>	
+			<put-attribute name="body" value="/WEB-INF/views/reports/sales/salesOrderReportsData.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="openPreSalesReportsForm" extends="base.definition">
+			<put-attribute name="menu" value="/WEB-INF/views/user/menu.jsp"></put-attribute>	
+			<put-attribute name="body" value="/WEB-INF/views/reports/sales/preSalesReportsForm.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="openSalesRtnOrderView" extends="ajax.defination">
+			<put-attribute name="menu"
+			value=""></put-attribute>	
+			<put-attribute name="body" value="/WEB-INF/views/reports/sales/salesReturnOrderReportData.jsp"></put-attribute>
+	</definition>
+	<definition name="openProductReportsForm" extends="base.definition">
+			<put-attribute name="menu" value="/WEB-INF/views/user/menu.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/reports/product/productSalesReport.jsp"></put-attribute>
+				
+	</definition>
+	<definition name="openSalesByProduct" extends="ajax.defination">
+		<put-attribute name="menu" value=""></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/reports/product/salesByProduct.jsp"></put-attribute>
+	
+	</definition>
+	
+</tiles-definitions>
