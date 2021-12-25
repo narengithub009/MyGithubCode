@@ -8,7 +8,7 @@ public class Employee implements Comparable<Employee>{
 		this.name = name;
 		this.age = age;
 	}
-	//This is our new model class
+	
 	public String getName() {
 		return name;
 	}
